@@ -1,0 +1,380 @@
+    html,
+    body {
+        height: 100%;
+        font-family: Calibri, Helvetica, sans-serif;
+    }
+    
+    .navbar {
+        background-color: #0498CF;
+        padding: 0px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        padding: 8px;
+        z-index: 100000;
+    }
+    
+    .profile-image {
+        border-radius: 60px;
+        height: 30px !important;
+        width: 30px;
+        background-image: url('../images/user.png');
+        background-position: center;
+        background-size: contain;
+        background-color: white;
+    }
+    
+    .found {
+        color: green;
+    }
+    
+    .not-found {
+        color: blue;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    @keyframes loader-animation {
+        0% {
+            width: 0%;
+        }
+        49% {
+            width: 100%;
+            left: 0%
+        }
+        50% {
+            left: 100%;
+            width: 0;
+        }
+        100% {
+            left: 0%;
+            width: 100%
+        }
+    }
+    
+    .loader {
+        height: 5px;
+        width: 100%;
+    }
+    
+    .loader .bar {
+        position: absolute;
+        height: 5px;
+        background: #DA4453;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #89216B, #DA4453);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #89216B, #DA4453);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        animation-name: loader-animation;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    
+    .navbar img {
+        height: 30px;
+    }
+    
+    .modal {
+        z-index: 2000000;
+    }
+    
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: -8em;
+        z-index: 1000;
+        display: none;
+        float: left;
+        min-width: 10rem;
+        padding: 0.5rem 0;
+        margin: 0.125rem 0 0;
+        font-size: 0.9rem;
+        color: #212529;
+        text-align: left;
+        list-style: none;
+        background-color: #fff;
+        border-radius: 0.25rem;
+    }
+    
+    .dropdown-menu li {
+        padding: 2px;
+    }
+    
+    .dropdown-menu li a {
+        padding: 8px;
+        display: block;
+    }
+    
+    .dropdown-menu li a:hover {
+        background-color: rgb(236, 236, 236);
+        text-decoration: none;
+    }
+    
+    .dropdown-menu li a:hover {
+        text-decoration: none;
+    }
+    /* Toggle Styles */
+    
+    #wrapper {
+        padding-left: 0;
+        -webkit-transition: all 0.6s ease;
+        -moz-transition: all 0.6s ease;
+        -o-transition: all 0.6s ease;
+        transition: all 0.6s ease;
+    }
+    
+    #sidebar-wrapper {
+        z-index: 2;
+        position: fixed;
+        left: 0;
+        width: 0;
+        height: 100%;
+        /* margin-left: -250px; */
+        overflow-y: auto;
+        background-color: #FFFFFF !Important;
+        /* -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease; */
+    }
+    
+    #page-content-wrapper {
+        /* width: 100%;
+        position: absolute; */
+        padding: 10px;
+    }
+    
+    #wrapper {
+        padding-left: 95px;
+    }
+    
+    #sidebar-wrapper {
+        width: 64px;
+    }
+    /* Sidebar Styles */
+    
+    .sidebar-nav {
+        /* position: absolute; */
+        top: 0;
+        right: 0;
+        /* width: 130px; */
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .sidebar-nav li {
+        padding: 10px;
+        padding-top: 32px;
+    }
+    /* card style */
+    
+    .card {
+        border: none;
+        box-shadow: #d6d6d6 1px 1px 48px;
+    }
+    
+    .card .card-body .card-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #007897;
+    }
+    
+    .input-group-text {
+        background-color: #0498CF;
+        border-color: #0498CF;
+        color: white;
+    }
+    
+    .form-control {
+        border-color: #0498CF;
+        outline: unset;
+    }
+    
+    .btn>.btn-primary {
+        background-color: #0498CF !important;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .sales-history-table {
+        border-collapse: separate;
+        border-spacing: 0 0.8em;
+        border: unset;
+    }
+    
+    .sales-history-table tbody tr {
+        border-radius: 0px;
+        box-shadow: #e4e4e4 1px 1px 8px;
+    }
+    
+    .sales-history-table tbody tr td,
+    .sales-history-table thead th {
+        border: unset
+    }
+    
+    .sales-history-table .eligible {
+        color: green
+    }
+    
+    .customer-table {
+        font-size: 0.8rem;
+    }
+    
+    .customer-table th {
+        color: #0498CF;
+    }
+    
+    .customer-table th {
+        border: unset !important
+    }
+    
+    .customer-table tr td {
+        background-color: rgb(245, 245, 245);
+    }
+    
+    .customer-table tr td p {
+        margin: 0;
+        padding: 4px;
+        font-size: 12px;
+        color: rgb(165, 165, 165);
+    }
+    
+    .customer-table tr td h5 {
+        margin: 0;
+        padding: 4px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    .customer-detail-table {
+        border-collapse: separate;
+        border-spacing: 0 0.4em;
+        border: unset;
+        color: #0498CF;
+    }
+    
+    .customer-detail-table tbody tr td,
+    .customer-detail-table thead th {
+        border: unset;
+        color: #0498CF;
+    }
+    
+    .customer-detail-table tbody tr {
+        border-radius: 4px;
+        box-shadow: #e4e4e4 1px 1px 8px;
+        cursor: pointer;
+    }
+    
+    .customer-name {
+        font-size: 1rem;
+        color: #0498CF;
+    }
+    
+    .customer-contact {
+        font-size: 0.8rem;
+        color: #7e7e7e;
+    }
+    /* datepicker css */
+    
+    .datepicker {
+        z-index: 5000000 !important;
+    }
+    
+    .ui-widget-header {
+        background: #0498CF !important;
+        border: unset;
+        border-radius: 0;
+    }
+    
+    .ui-widget.ui-widget-content {
+        border: unset;
+        padding: 0;
+    }
+    
+    .ui-datepicker-calendar {
+        background: white;
+    }
+    
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default,
+    .ui-button,
+    html .ui-button.ui-state-disabled:hover,
+    html .ui-button.ui-state-disabled:active {
+        border: unset;
+        margin: 2px;
+        background-color: grey;
+    }
+    
+    .active-label {
+        /* padding: 4px; */
+        font-size: 0.8rem;
+        text-align: center;
+        background-color: rgb(70, 199, 70);
+        border-radius: 60px;
+        width: 80%;
+        color: white;
+    }
+    
+    .table-scroll {
+        /*width:100%; */
+        display: block;
+        empty-cells: show;
+        /* Decoration */
+        border-collapse: separate;
+        border-spacing: 0 0.8em;
+    }
+    
+    .table-scroll thead {
+        color: #0498CF;
+        background-color: white;
+        position: relative;
+        display: block;
+        width: 100%;
+        overflow-y: scroll;
+    }
+    
+    .table-scroll tbody,
+    .table-scroll tfoot {
+        /* Position */
+        display: block;
+        position: relative;
+        width: 100%;
+        overflow-y: scroll;
+        /* Decoration */
+    }
+    
+    .table-scroll tr {
+        width: 100%;
+        display: flex;
+    }
+    
+    .table-scroll td,
+    .table-scroll th {
+        flex-basis: 100%;
+        flex-grow: 2;
+        display: block;
+        /* padding: 1rem; */
+        text-align: left;
+    }
+    /* Other options */
+    
+    .table-scroll.small-first-col td:first-child,
+    .table-scroll.small-first-col th:first-child {
+        flex-basis: 20%;
+        flex-grow: 1;
+    }
+    
+    .body-half-screen {
+        max-height: 40vh;
+    }
+    
+    .small-col {
+        flex-basis: 10%;
+    }

@@ -1,0 +1,112 @@
+.curve-bakground {
+    background: url('../images/new-curve-vector.png');
+    height: 100vh;
+    background-size: 80% 106%;
+    -webkit-background-size: 54% 106%;
+    -moz-background-size: 54% 106%;
+    -o-background-size: 54% 106%;
+    background-position: -11em -1em;
+    left: -158px;
+    top: 0px;
+    background-repeat: no-repeat;
+}
+
+.right-illustration {
+    background: url('../images/person_vector.png');
+    height: 100vh;
+    background-size: 600px;
+    background-position: right;
+    right: 0px;
+    top: 0px;
+    background-repeat: no-repeat;
+}
+
+.side-logo {
+    top: 15em;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.side-logo img {
+    height: 180px;
+}
+
+h2 {
+    font-family: 'brightonbold';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    margin: 0 0 30px;
+    padding: 0px;
+    color: #007897;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.login_card {
+    margin: auto 0;
+    max-width: 320px;
+    background: #ffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+    top: 25%;
+    border: unset;
+    box-shadow: 0 4px 60px rgb(197 197 197);
+    -webkit-box-shadow: 0 4px 60px rgb(197 197 197);
+    -moz-box-shadow: 0 4px 60px rgb(197 197 197);
+}
+
+.input-group-text {
+    background-color: #007897;
+    border-color: #007897;
+    color: white;
+}
+
+.form-control {
+    border-color: #007897;
+    outline: unset;
+}
+
+.btn-primary {
+    background-color: #007897;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #007897;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.brand_logo {
+    height: 117px;
+    width: 126px;
+}
+
+.form_container {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.input-group-text {
+    color: white !important;
+    border: 0 !important;
+    /* border-radius: 4 !important; */
+}
+
+.input_user,
+.input_pass:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .login-card {
+        background-color: lightblue;
+    }
+}
